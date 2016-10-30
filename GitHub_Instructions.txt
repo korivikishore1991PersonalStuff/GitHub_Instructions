@@ -1,0 +1,31 @@
+GitHub instructions:
+git help git
+
+git clone https://github.com/KoriviKishore1991/GitHub_directory_name.git
+
+cd GitHub_directory_name/
+
+vim ReadMe.md
+/*Changes made to ReadMe*/
+
+git status
+
+git add .
+(or)
+git add ReadMe.md
+
+git commit -m "message"
+
+git log
+
+git push -u origin master
+/*Asks for username and password*/
+
+git pull origin master
+/*to check if local folder is upto date (or) not and add files*/
+
+Download GitHub Desktop
+
+SetUp Git:-
+$git config --global user.name "YourName"
+$git config --global user.email "Your Email Address"
