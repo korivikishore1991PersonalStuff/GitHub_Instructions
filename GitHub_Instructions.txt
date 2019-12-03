@@ -1,31 +1,50 @@
 GitHub instructions:
 git help git
-
 git clone https://github.com/KoriviKishore1991/GitHub_directory_name.git
-
 cd GitHub_directory_name/
-
 vim ReadMe.md
 /*Changes made to ReadMe*/
-
 git status
-
 git add .
 (or)
 git add ReadMe.md
-
 git commit -m "After Update"
-
 git log
-
 git push -u origin master
 /*Asks for username and password*/
-
 git pull origin master
 /*to check if local folder is upto date (or) not and add files*/
-
 Download GitHub Desktop
 
 SetUp Git:-
 $git config --global user.name "YourName"
 $git config --global user.email "Your Email Address"
+  
+Git Deployment Instructions:-   
+# Initial creation of repository and working in "master" branch  
+mkdir git_repo_name  
+cd git_repo_name  
+git init  # to initialize the git_repo  
+git status # to check the status of git_repo and branch  
+vi readme.md # editing something  
+ll  
+git status # to check the branchs  
+git add .  
+git commit -m "initial stuff"  # to commit the current changes to branch  
+git status # to check the branchs  
+git push -u origin master # to push changes onto central branch  
+  
+# To modify the existing repository  
+git clone https://path/to/repository  
+git status # to check on branch  
+git branch # to check on branchs  
+git checkout -b new_branch # to create a new branch named new_branch (or) to change to new_branch.  
+vi readme.txt # edit something  
+git add .  
+git commit -m "msg"  
+git push origin new_branch  (or) git pull origin some_other_dir  
+# To merge new_branch onto master  
+git checkout master  
+git merge new_branch  
+# to delete the new_branch  
+git branch -d new_branch  
