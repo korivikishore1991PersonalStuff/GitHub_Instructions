@@ -43,6 +43,10 @@ vi readme.txt # edit something
 git add .  
 git commit -m "msg"  
 git push origin new_branch  (or) git pull origin some_other_dir  
+# To just pull and update to diff branch  
+git branch -a  
+git checkout newBranchName  
+git pull  
 # To merge new_branch onto master  
 git checkout master  
 git merge new_branch  
