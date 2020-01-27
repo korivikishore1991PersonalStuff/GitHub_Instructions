@@ -44,7 +44,8 @@ git add .
 git commit -m "msg"  
 git push origin new_branch  (or) git pull origin some_other_dir  
 # To just pull and update to diff branch  
-git branch -a  
+git clone https://path/to/repository  
+git branch -a #By Default you will be in master  
 git checkout newBranchName  
 git pull  
 # To merge new_branch onto master  
