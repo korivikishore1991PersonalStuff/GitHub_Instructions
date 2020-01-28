@@ -53,3 +53,9 @@ git checkout master
 git merge new_branch  
 # to delete the new_branch  
 git branch -d new_branch  
+  
+# Known issues and erros:  
+error: our local changes to the following files would be overwritten by merge. Please, commit your changes or stash them before you can merge.  
+git stash  
+git pull  
+  
